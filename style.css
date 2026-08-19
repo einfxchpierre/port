@@ -15,6 +15,10 @@
   box-sizing: border-box;
   font-family: Overpass, sans-serif;
   color: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 body {
@@ -729,6 +733,69 @@ main {
     gap: 30px;
     padding: 45px 25px 35px;
   }
+}
+
+.footer-legal {
+  color: #ffffff66;
+}
+
+.footer-legal-link {
+  color: #ffffff99;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.footer-legal-link:hover {
+  color: #54aaff;
+  text-decoration: underline;
+}
+
+/* Impressum */
+.impressum-page {
+  padding-top: 120px;
+  min-height: 100vh;
+}
+
+.impressum-title {
+  text-align: center;
+  font-size: 3rem;
+  font-family: Heavitas, Overpass, sans-serif;
+  font-weight: 200;
+  margin: 30px 20px 10px;
+}
+
+.impressum-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+.impressum-container h2 {
+  font-size: 1.4rem;
+  margin: 40px 0 12px;
+  color: #54aaff;
+}
+
+.impressum-container h3 {
+  font-size: 1.15rem;
+  margin: 24px 0 8px;
+}
+
+.impressum-container p,
+.impressum-container li {
+  font-size: 1.05rem;
+  font-weight: 200;
+  line-height: 1.75;
+  color: #ffffffb3;
+}
+
+.impressum-container a {
+  color: #54aaff;
+  text-decoration: none;
+}
+
+.impressum-container a:hover {
+  text-decoration: underline;
 }
 
 /* Appear / Disabled (scroll reveal) */

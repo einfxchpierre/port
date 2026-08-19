@@ -1,3 +1,10 @@
+// Copy & selection protection
+document.addEventListener("contextmenu", (e) => e.preventDefault());
+document.addEventListener("copy", (e) => e.preventDefault());
+document.addEventListener("cut", (e) => e.preventDefault());
+document.addEventListener("selectstart", (e) => e.preventDefault());
+document.addEventListener("dragstart", (e) => e.preventDefault());
+
 // Typing animation
 const words = ["Feuerwehrmann", "Gamer", "Coder", "Systemintegrator"];
 const typingEl = document.getElementById("typingtext");
@@ -7,6 +14,7 @@ let isDeleting = false;
 let typingDelay = 100;
 
 function typeEffect() {
+  if (!typingEl) return;
   const currentWord = words[wordIndex];
 
   if (isDeleting) {
