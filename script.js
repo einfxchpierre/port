@@ -6,7 +6,7 @@ document.addEventListener("selectstart", (e) => e.preventDefault());
 document.addEventListener("dragstart", (e) => e.preventDefault());
 
 // Typing animation
-const words = ["Feuerwehrmann", "Gamer", "Coder", "Systemintegrator"];
+const words = ["Feuerwehrmann", "Systemintegrator"];
 const typingEl = document.getElementById("typingtext");
 let wordIndex = 0;
 let charIndex = 0;
