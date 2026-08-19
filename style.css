@@ -798,6 +798,114 @@ main {
   text-decoration: underline;
 }
 
+/* Domains */
+.domains-section {
+  max-width: 1300px;
+  margin: 80px auto;
+  padding-bottom: 30px;
+}
+
+.domains-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.domains-title h1 {
+  font-size: 3rem;
+}
+
+.domains-title p {
+  color: hsla(0, 0%, 100%, .712);
+}
+
+.domains-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+.domain-card {
+  width: 340px;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, .438);
+  border: 1px solid rgba(255, 255, 255, .07);
+  border-radius: 14px;
+  padding: 25px;
+  text-decoration: none;
+  color: #fff;
+  transition: transform .25s ease, background-color .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.domain-card:hover {
+  transform: translateY(-6px);
+  background-color: rgba(0, 0, 0, .65);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .45);
+  border-color: rgba(84, 170, 255, .45);
+}
+
+.domain-card h2 {
+  font-size: 1.5rem;
+  font-family: Heavitas, Overpass, sans-serif;
+  font-weight: 400;
+  margin-bottom: 8px;
+  color: #54aaff;
+}
+
+.domain-card p {
+  color: hsla(0, 0%, 100%, .623);
+  font-weight: 200;
+  line-height: 1.55;
+  font-size: .98rem;
+}
+
+.domains-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.domains-more a {
+  display: inline-block;
+  padding: 14px 42px;
+  border-radius: 10px;
+  background-color: #3847f5;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  transition: background-color .2s ease, transform .2s ease, box-shadow .2s ease;
+  box-shadow: 0 4px 18px rgba(56, 71, 245, .35);
+}
+
+.domains-more a:hover {
+  background-color: #2738f5;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(56, 71, 245, .5);
+}
+
+/* Domains page */
+.domains-page {
+  padding-top: 120px;
+  min-height: 100vh;
+}
+
+.domains-page-title {
+  text-align: center;
+  font-size: 3rem;
+  font-family: Heavitas, Overpass, sans-serif;
+  font-weight: 200;
+  margin: 30px 20px 10px;
+}
+
+.domains-page-sub {
+  text-align: center;
+  color: hsla(0, 0%, 100%, .712);
+  margin-bottom: 10px;
+}
+
 /* Appear / Disabled (scroll reveal) */
 .disabled {
   opacity: 0;
