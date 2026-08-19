@@ -833,9 +833,10 @@ main {
   background-color: rgba(0, 0, 0, .438);
   border: 1px solid rgba(255, 255, 255, .07);
   border-radius: 14px;
-  padding: 25px;
+  padding: 30px 25px;
   text-decoration: none;
   color: #fff;
+  text-align: center;
   transition: transform .25s ease, background-color .25s ease, box-shadow .25s ease, border-color .25s ease;
 }
 
@@ -847,18 +848,12 @@ main {
 }
 
 .domain-card h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-family: Heavitas, Overpass, sans-serif;
   font-weight: 400;
-  margin-bottom: 8px;
+  margin: 0;
   color: #54aaff;
-}
-
-.domain-card p {
-  color: hsla(0, 0%, 100%, .623);
-  font-weight: 200;
-  line-height: 1.55;
-  font-size: .98rem;
+  word-break: break-word;
 }
 
 .domains-more {
